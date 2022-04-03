@@ -15,10 +15,13 @@ const conta2 = new ContaCorrente(12, cliente2);
 
 
 
-let valor = 30;
-ContaCorrenteAlfonso.transferir(valor, conta2);
+
+ContaCorrenteAlfonso.transferir(30, conta2);
 console.log(conta2.saldo);
 
 
-console.log("O nome  e cpf do Alfonso é:  ");
-console.log(cliente1);
+//console.log("O nome  e cpf do Alfonso é:  ");
+//console.log(cliente1);
+
+
+console.log(ContaCorrenteAlfonso);

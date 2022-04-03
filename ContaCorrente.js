@@ -20,7 +20,7 @@ export class ContaCorrente{
         return this._saldo;
     }
 
-    constructor(cliente, agencia){
+    constructor(agencia,cliente){
         this.agencia = agencia;
         this.cliente = cliente;
     }
