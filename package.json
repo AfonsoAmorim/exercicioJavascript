@@ -1,0 +1,21 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto Alura",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AfonsoAmorim/exercicioJavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AfonsoAmorim/exercicioJavascript/issues"
+  },
+  "homepage": "https://github.com/AfonsoAmorim/exercicioJavascript#readme"
+
+}
