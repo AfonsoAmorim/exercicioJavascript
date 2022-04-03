@@ -3,27 +3,22 @@ import { ContaCorrente } from "./ContaCorrente.js";
 
 
 
-const cliente1 = new Cliente();
-cliente1.nome = "Alfonso";
-cliente1.cpf = 22222222222;
+const cliente1 = new Cliente("Alfonso", 22222222222);
 
-const cliente2 = new Cliente();
-cliente2.nome = "Aline";
-cliente2.cpf = 8885522222;
-
-const ContaCorrenteAlfonso = new ContaCorrente();
-ContaCorrenteAlfonso.agencia = 5522;
+const cliente2 = new Cliente("Aline",8885522222);
 
 
+const ContaCorrenteAlfonso = new ContaCorrente(5522, cliente1);
+ContaCorrenteAlfonso.depositar(500);
 
-ContaCorrenteAlfonso.depositar(2000);
-
-const valorSacado = ContaCorrenteAlfonso.sacar(300);
+const conta2 = new ContaCorrente(12, cliente2);
 
 
 
-console.log(cliente1)
-console.log(cliente2)
+let valor = 30;
+ContaCorrenteAlfonso.transferir(valor, conta2);
+console.log(conta2.saldo);
 
-console.log("O saldo e agência do Alfonso é:  ");
-console.log(ContaCorrenteAlfonso)
+
+console.log("O nome  e cpf do Alfonso é:  ");
+console.log(cliente1);
